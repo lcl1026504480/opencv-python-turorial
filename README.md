@@ -1,6 +1,3 @@
-如果你希望嵌入一张图片，可以这么做：
-
-![Yaktocat 的图片](https://octodex.github.com/images/yaktocat.png)
-
+![1](http://www.005.tv/uploads/allimg/190118/55-1Z11Q019123Z.jpg)
 
 
