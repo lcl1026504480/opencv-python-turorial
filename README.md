@@ -1,3 +1,7 @@
-[1](http://www.005.tv/uploads/allimg/190118/55-1Z11Q019123Z.jpg)
+# 这个是我b站一起学opencv-python的一些代码。
+
+## up主：直死之邪王灼眼
+
+### 欢迎关注！
 
 
