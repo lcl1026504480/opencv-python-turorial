@@ -33,13 +33,14 @@ h, w = a.shape[:2]
 newcameramtx, roi = cv2.getOptimalNewCameraMatrix(mtx, dist, (h, w), 1)
 dst = cv2.undistort(a, mtx, dist, None)
 # undistort
-mapx, mapy = cv2.initUndistortRectifyMap(mtx, dist, None, newcameramtx, (w, h), 4)
+mapx, mapy = cv2.initUndistortRectifyMap(mtx, dist, None, newcameramtx, (w, h), 5)
 dst = cv2.remap(a, mapx, mapy, cv2.INTER_LINEAR)
 # crop the image
 # x, y, w, h = roi
 # dst = dst[y:y + h, x:x + w]
 print(mapx.shape)
 print(mapy)
+np.savez("outfile", mtx, dist)
 a = cv2.cvtColor(a, cv2.COLOR_BGR2RGB)
 dst = cv2.cvtColor(dst, cv2.COLOR_BGR2RGB)
 # print(roi)
