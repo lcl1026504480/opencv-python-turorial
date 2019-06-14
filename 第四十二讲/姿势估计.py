@@ -31,8 +31,9 @@ def draw(img, corners, imgpts):
     return img
 
 
+n = 0
 for fname in glob.glob("chess/*.bmp"):
-    print(fname)
+    # print(fname)
     img = cv2.imread(fname)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     ret, corners = cv2.findChessboardCorners(gray, (6, 4), None)
@@ -45,12 +46,14 @@ for fname in glob.glob("chess/*.bmp"):
 
         # project 3D points to image plane
         imgpts, jac = cv2.projectPoints(axis, rvecs, tvecs, mtx, dist)
-        print(imgpts)
+        # print(imgpts)
 
         img = draw(img, corners2, imgpts)
         cv2.imshow('img', img)
-        k = cv2.waitKey(0) & 0xff
-        if k == 's':
-            cv2.imwrite(fname + '.png', img)
+        n += 1
+        k = cv2.waitKey(0)
+        if k == ord('s'):
+            print(n)
+            cv2.imwrite(str(n) + ".jpg", img)
 
 cv2.destroyAllWindows()
