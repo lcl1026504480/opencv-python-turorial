@@ -1,0 +1,25 @@
+###
+### Using 'mingw' toolset.
+###
+
+C:\Users\lenovouser\Desktop\opencv-python-turorial\第四十五讲\tools\build\src\engine>if exist bootstrap rd /S /Q bootstrap 
+
+C:\Users\lenovouser\Desktop\opencv-python-turorial\第四十五讲\tools\build\src\engine>md bootstrap 
+
+C:\Users\lenovouser\Desktop\opencv-python-turorial\第四十五讲\tools\build\src\engine>gcc -DNT -o bootstrap\jam0.exe  command.c compile.c constants.c debug.c execcmd.c execnt.c filent.c frames.c function.c glob.c hash.c hdrmacro.c headers.c jam.c jambase.c jamgram.c lists.c make.c make1.c object.c option.c output.c parse.c pathnt.c pathsys.c regexp.c rules.c scan.c search.c subst.c timestamp.c variable.c modules.c strings.c filesys.c builtins.c md5.c class.c cwd.c w32_getreg.c native.c modules/set.c modules/path.c modules/regex.c modules/property-set.c modules/sequence.c modules/order.c 
+
+C:\Users\lenovouser\Desktop\opencv-python-turorial\第四十五讲\tools\build\src\engine>.\bootstrap\jam0 -f build.jam --toolset=mingw "--toolset-root= "  clean 
+###
+### Unknown toolset: mingw
+###
+### Known toolsets are: acc, borland, cc, como, clang, darwin, gcc, gcc-nocygwin, intel-darwin, intel-linux, intel-win32, kcc, kylix, metrowerks, mipspro, msvc, qcc, pathscale, pgi, sun, sunpro, tru64cxx, vacpp, xlcpp, vc7, vc8, vc9, vc10, vc11, vc12, vc14, vc141, vc142, vmsdecc
+###
+
+C:\Users\lenovouser\Desktop\opencv-python-turorial\第四十五讲\tools\build\src\engine>.\bootstrap\jam0 -f build.jam --toolset=mingw "--toolset-root= "  
+###
+### Unknown toolset: mingw
+###
+### Known toolsets are: acc, borland, cc, como, clang, darwin, gcc, gcc-nocygwin, intel-darwin, intel-linux, intel-win32, kcc, kylix, metrowerks, mipspro, msvc, qcc, pathscale, pgi, sun, sunpro, tru64cxx, vacpp, xlcpp, vc7, vc8, vc9, vc10, vc11, vc12, vc14, vc141, vc142, vmsdecc
+###
+
+C:\Users\lenovouser\Desktop\opencv-python-turorial\第四十五讲\tools\build\src\engine>exit /b 1 
